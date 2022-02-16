@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+html{
+    box-sizing: border-box;
+}
+body{
+    margin:0;
+    min-height: 100vh;
+    background-color: #157590;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='88' height='24' viewBox='0 0 88 24'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='autumn' fill='%2300ff79' fill-opacity='0.08'%3E%3Cpath d='M10 0l30 15 2 1V2.18A10 10 0 0 0 41.76 0H39.7a8 8 0 0 1 .3 2.18v10.58L14.47 0H10zm31.76 24a10 10 0 0 0-5.29-6.76L4 1 2 0v13.82a10 10 0 0 0 5.53 8.94L10 24h4.47l-6.05-3.02A8 8 0 0 1 4 13.82V3.24l31.58 15.78A8 8 0 0 1 39.7 24h2.06zM78 24l2.47-1.24A10 10 0 0 0 86 13.82V0l-2 1-32.47 16.24A10 10 0 0 0 46.24 24h2.06a8 8 0 0 1 4.12-4.98L84 3.24v10.58a8 8 0 0 1-4.42 7.16L73.53 24H78zm0-24L48 15l-2 1V2.18A10 10 0 0 1 46.24 0h2.06a8 8 0 0 0-.3 2.18v10.58L73.53 0H78z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    color:black;
+    font-family: Lobster, sans-serif;
+    font-weight: 700;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.quote-container{
+    width:auto;
+    max-width: 900px;
+    padding: 20px 30px;
+    border-radius: 10px;
+    background-color: rgba(255,255,255,0.4);
+    box-shadow: 0 10px 10px 10px rgba(0,0,0,0.3);
+}
+
+.quote-text{
+    font-size: 2.75rem;
+    letter-spacing: 2px;
+}
+
+.long-quote{
+    font-size: 2em;
+}
+
+.fa-quote-left{
+    font-size: 4rem;
+}
+
+.quote-author{
+    margin-top: 15px;
+    font-size: 2rem;
+    font-weight: 400;
+    font-style: italic;
+    letter-spacing: 2px;
+}
+
+.button-container{
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+button{
+    cursor: pointer;
+    font-size: 1.2rem;
+    height: 2.5rem;
+    border: none;
+    border-radius: 10px;
+    color:white;
+    background:#333;
+    outline:none;
+    padding:0.5rem 1.8rem;
+    box-shadow: 0 0.3rem rgba(121,121,121,0.65);
+}
+
+button:hover{
+    filter:brightness(120%)
+}
+
+button:active{
+    transform: translate(0, 0.3rem);
+    box-shadow: 0 0.1rem rgba(255,255,255,0.65);
+}
+
+.twitter-button:hover{
+    color: #38a1f3;
+}
+
+.fa-twitter{
+    font-size: 1.5rem;
+}
+
+/* Loader*/
+.loader {
+    border: 16px solid #f3f3f3; 
+    border-top: 16px solid #333; 
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+/*MEDIA QUERY*/
+@media screen and (max-width:1000px){
+    .quote-container{
+        margin: auto 10px;
+    }
+
+    .quote-text{
+        font-size:2.5rem;
+    }
+}
